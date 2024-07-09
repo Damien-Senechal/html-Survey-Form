@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Your favorite DigiCam survey form !</h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to answer the survey !
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your Email"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+                <input 
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="99"
+                    class="form-control"
+                    placeholder="Age"
+                />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Choose you favorite digicam brand :</p>
+                <label>
+                    <input 
+                        name="digicam-brand"
+                        value="canon"
+                        type="radio"
+                        class="input-radio"
+                        checked 
+                    />Canon</label
+                >
+                <label>
+                    <input 
+                        name="digicam-brand"
+                        value="fujifilm"
+                        type="radio"
+                        class="input-radio" 
+                    />FujiFilm</label
+                >
+                <label>
+                    <input 
+                        name="digicam-brand"
+                        value="sony"
+                        type="radio"
+                        class="input-radio" 
+                    />Sony</label
+                >
+                <label>
+                    <input 
+                        name="digicam-brand"
+                        value="panasonic"
+                        type="radio"
+                        class="input-radio" 
+                    />Panasonic</label
+                >
+                <label>
+                    <input 
+                        name="digicam-brand"
+                        value="kodak"
+                        type="radio"
+                        class="input-radio" 
+                    />Kodak</label
+                >
+            </div>
+            <div class="form-group">
+                <p>
+                    What color would you like to have ?
+                    <span class="clue">(Check all the one you like)</span>
+                </p>
+
+                <label>
+                    <input 
+                        name="color"
+                        value="black"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Black</label
+                >
+                <label>
+                    <input 
+                        name="color"
+                        value="grey"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Grey</label
+                >
+                <label>
+                    <input 
+                        name="color"
+                        value="pink"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Pink</label
+                >
+                <label>
+                    <input 
+                        name="color"
+                        value="blue"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Blue</label
+                >
+                <label>
+                    <input 
+                        name="color"
+                        value="green"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Green</label
+                >
+                <label>
+                    <input 
+                        name="color"
+                        value="white"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />White</label
+                >
+            </div>
+
+            <div class="form-group">
+                <p>Tell us why you like digicam :</p>
+                <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="I like this digicam because ..."
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
