@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
@@ -6,6 +13,8 @@ body {
     color: #000000;
     margin: 0;
 }
+
+
 
 body::before {
     content: '';
@@ -58,6 +67,18 @@ button {
     width: 100%;
     margin: 3.125rem auto 0 auto;
 }
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
 
 .header {
     padding: 0 0.625rem;
